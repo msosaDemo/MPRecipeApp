@@ -8,14 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		7F5056162CB462B200BE800D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056152CB462B200BE800D /* AppDelegate.swift */; };
-		7F5056182CB462B200BE800D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056172CB462B200BE800D /* SceneDelegate.swift */; };
-		7F50561A2CB462B200BE800D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056192CB462B200BE800D /* ViewController.swift */; };
-		7F50561D2CB462B200BE800D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F50561C2CB462B200BE800D /* Base */; };
+		7F50561A2CB462B200BE800D /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056192CB462B200BE800D /* RecipesViewController.swift */; };
 		7F50561F2CB462B400BE800D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F50561E2CB462B400BE800D /* Assets.xcassets */; };
 		7F5056222CB462B400BE800D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F5056212CB462B400BE800D /* Base */; };
 		7F50562D2CB462B500BE800D /* MPRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50562C2CB462B500BE800D /* MPRecipeTests.swift */; };
 		7F5056372CB462B500BE800D /* MPRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056362CB462B500BE800D /* MPRecipeUITests.swift */; };
 		7F5056392CB462B500BE800D /* MPRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056382CB462B500BE800D /* MPRecipeUITestsLaunchTests.swift */; };
+		7F5056582CB475B600BE800D /* MPLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056572CB475B600BE800D /* MPLabel.swift */; };
+		7F50565A2CB4766800BE800D /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056592CB4766800BE800D /* RecipeModel.swift */; };
+		7F50565C2CB4785D00BE800D /* NetworkCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50565B2CB4785D00BE800D /* NetworkCaller.swift */; };
+		7F50565E2CB47A9D00BE800D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50565D2CB47A9D00BE800D /* Constants.swift */; };
+		7F5056602CB48B5700BE800D /* RecipesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F50565F2CB48B5700BE800D /* RecipesViewController.xib */; };
+		7F5056622CB48C5800BE800D /* RecipesViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056612CB48C5800BE800D /* RecipesViewController+TableView.swift */; };
+		7F5056642CB48F3300BE800D /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056632CB48F3300BE800D /* RecipesViewModel.swift */; };
+		7F5056662CB49F0700BE800D /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056652CB49F0700BE800D /* RecipesModel.swift */; };
+		7F5056682CB4BD9D00BE800D /* MPColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056672CB4BD9D00BE800D /* MPColor+UIColor.swift */; };
+		7F50566A2CB4BECC00BE800D /* MPFont+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056692CB4BECC00BE800D /* MPFont+UIFont.swift */; };
+		7F50566C2CB4C3BC00BE800D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50566B2CB4C3BC00BE800D /* Observable.swift */; };
+		7F5056712CB4CD8700BE800D /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056702CB4CD8700BE800D /* LoadingIndicatorView.swift */; };
+		7F5056732CB4D02B00BE800D /* LoadingIndicatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056722CB4D02B00BE800D /* LoadingIndicatorModel.swift */; };
+		7F5056752CB4D0C000BE800D /* LoadingIndicatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056742CB4D0C000BE800D /* LoadingIndicatorViewModel.swift */; };
+		7F50567B2CB59B1000BE800D /* RecipeTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50567A2CB59B1000BE800D /* RecipeTableViewCellModel.swift */; };
+		7F50567D2CB59B6400BE800D /* RecipeTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50567C2CB59B6400BE800D /* RecipeTableViewCellViewModel.swift */; };
+		7F5056842CB5F3A300BE800D /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5056832CB5F3A300BE800D /* RecipeTableViewCell.xib */; };
+		7F5056852CB5F3A300BE800D /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056822CB5F3A300BE800D /* RecipeTableViewCell.swift */; };
+		7F5056872CB6D7E500BE800D /* MPImageView+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5056862CB6D7E500BE800D /* MPImageView+UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +55,7 @@
 /* Begin PBXFileReference section */
 		7F5056122CB462B200BE800D /* MPRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5056152CB462B200BE800D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F5056172CB462B200BE800D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F5056192CB462B200BE800D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F50561C2CB462B200BE800D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F5056192CB462B200BE800D /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		7F50561E2CB462B400BE800D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5056212CB462B400BE800D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5056232CB462B400BE800D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,25 @@
 		7F5056322CB462B500BE800D /* MPRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5056362CB462B500BE800D /* MPRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPRecipeUITests.swift; sourceTree = "<group>"; };
 		7F5056382CB462B500BE800D /* MPRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F5056572CB475B600BE800D /* MPLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPLabel.swift; sourceTree = "<group>"; };
+		7F5056592CB4766800BE800D /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		7F50565B2CB4785D00BE800D /* NetworkCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCaller.swift; sourceTree = "<group>"; };
+		7F50565D2CB47A9D00BE800D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F50565F2CB48B5700BE800D /* RecipesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesViewController.xib; sourceTree = "<group>"; };
+		7F5056612CB48C5800BE800D /* RecipesViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesViewController+TableView.swift"; sourceTree = "<group>"; };
+		7F5056632CB48F3300BE800D /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		7F5056652CB49F0700BE800D /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
+		7F5056672CB4BD9D00BE800D /* MPColor+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MPColor+UIColor.swift"; sourceTree = "<group>"; };
+		7F5056692CB4BECC00BE800D /* MPFont+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MPFont+UIFont.swift"; sourceTree = "<group>"; };
+		7F50566B2CB4C3BC00BE800D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		7F5056702CB4CD8700BE800D /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		7F5056722CB4D02B00BE800D /* LoadingIndicatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorModel.swift; sourceTree = "<group>"; };
+		7F5056742CB4D0C000BE800D /* LoadingIndicatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewModel.swift; sourceTree = "<group>"; };
+		7F50567A2CB59B1000BE800D /* RecipeTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCellModel.swift; sourceTree = "<group>"; };
+		7F50567C2CB59B6400BE800D /* RecipeTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		7F5056822CB5F3A300BE800D /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		7F5056832CB5F3A300BE800D /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
+		7F5056862CB6D7E500BE800D /* MPImageView+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MPImageView+UIImageView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +133,9 @@
 		7F5056142CB462B200BE800D /* MPRecipe */ = {
 			isa = PBXGroup;
 			children = (
-				7F5056152CB462B200BE800D /* AppDelegate.swift */,
-				7F5056172CB462B200BE800D /* SceneDelegate.swift */,
-				7F5056192CB462B200BE800D /* ViewController.swift */,
-				7F50561B2CB462B200BE800D /* Main.storyboard */,
+				7F50566E2CB4CBA600BE800D /* vc */,
+				7F50566D2CB4CBA000BE800D /* src */,
 				7F50561E2CB462B400BE800D /* Assets.xcassets */,
-				7F5056202CB462B400BE800D /* LaunchScreen.storyboard */,
 				7F5056232CB462B400BE800D /* Info.plist */,
 			);
 			path = MPRecipe;
@@ -125,6 +156,122 @@
 				7F5056382CB462B500BE800D /* MPRecipeUITestsLaunchTests.swift */,
 			);
 			path = MPRecipeUITests;
+			sourceTree = "<group>";
+		};
+		7F5056452CB462C900BE800D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F50567C2CB59B6400BE800D /* RecipeTableViewCellViewModel.swift */,
+				7F5056742CB4D0C000BE800D /* LoadingIndicatorViewModel.swift */,
+				7F5056632CB48F3300BE800D /* RecipesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F5056462CB462E700BE800D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F5056702CB4CD8700BE800D /* LoadingIndicatorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F5056472CB462F100BE800D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F50567A2CB59B1000BE800D /* RecipeTableViewCellModel.swift */,
+				7F5056722CB4D02B00BE800D /* LoadingIndicatorModel.swift */,
+				7F5056592CB4766800BE800D /* RecipeModel.swift */,
+				7F5056652CB49F0700BE800D /* RecipesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F5056492CB462FB00BE800D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F50565D2CB47A9D00BE800D /* Constants.swift */,
+				7F50565B2CB4785D00BE800D /* NetworkCaller.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7F50564A2CB4630900BE800D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7F5056152CB462B200BE800D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7F50564B2CB4690C00BE800D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F50567E2CB5EC7700BE800D /* RecipesViewController */,
+				7F50567F2CB5EC8500BE800D /* RecipeTableViewCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F5056562CB475AB00BE800D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F50566B2CB4C3BC00BE800D /* Observable.swift */,
+				7F5056572CB475B600BE800D /* MPLabel.swift */,
+				7F5056882CB6D7FA00BE800D /* Extension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7F50566D2CB4CBA000BE800D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7F50564A2CB4630900BE800D /* AppDelegate */,
+				7F50564B2CB4690C00BE800D /* Controller */,
+				7F5056562CB475AB00BE800D /* Classes */,
+				7F5056492CB462FB00BE800D /* Network */,
+				7F5056472CB462F100BE800D /* Model */,
+				7F5056462CB462E700BE800D /* View */,
+				7F5056452CB462C900BE800D /* ViewModel */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7F50566E2CB4CBA600BE800D /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				7F50565F2CB48B5700BE800D /* RecipesViewController.xib */,
+				7F5056202CB462B400BE800D /* LaunchScreen.storyboard */,
+				7F5056832CB5F3A300BE800D /* RecipeTableViewCell.xib */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		7F50567E2CB5EC7700BE800D /* RecipesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F5056192CB462B200BE800D /* RecipesViewController.swift */,
+				7F5056612CB48C5800BE800D /* RecipesViewController+TableView.swift */,
+			);
+			path = RecipesViewController;
+			sourceTree = "<group>";
+		};
+		7F50567F2CB5EC8500BE800D /* RecipeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F5056822CB5F3A300BE800D /* RecipeTableViewCell.swift */,
+			);
+			path = RecipeTableViewCell;
+			sourceTree = "<group>";
+		};
+		7F5056882CB6D7FA00BE800D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7F5056672CB4BD9D00BE800D /* MPColor+UIColor.swift */,
+				7F5056692CB4BECC00BE800D /* MPFont+UIFont.swift */,
+				7F5056862CB6D7E500BE800D /* MPImageView+UIImageView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +380,8 @@
 			files = (
 				7F50561F2CB462B400BE800D /* Assets.xcassets in Resources */,
 				7F5056222CB462B400BE800D /* Base in Resources */,
-				7F50561D2CB462B200BE800D /* Base in Resources */,
+				7F5056602CB48B5700BE800D /* RecipesViewController.xib in Resources */,
+				7F5056842CB5F3A300BE800D /* RecipeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +406,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F50561A2CB462B200BE800D /* ViewController.swift in Sources */,
+				7F50566C2CB4C3BC00BE800D /* Observable.swift in Sources */,
+				7F5056622CB48C5800BE800D /* RecipesViewController+TableView.swift in Sources */,
+				7F50561A2CB462B200BE800D /* RecipesViewController.swift in Sources */,
+				7F5056852CB5F3A300BE800D /* RecipeTableViewCell.swift in Sources */,
+				7F50566A2CB4BECC00BE800D /* MPFont+UIFont.swift in Sources */,
+				7F5056712CB4CD8700BE800D /* LoadingIndicatorView.swift in Sources */,
+				7F5056642CB48F3300BE800D /* RecipesViewModel.swift in Sources */,
 				7F5056162CB462B200BE800D /* AppDelegate.swift in Sources */,
-				7F5056182CB462B200BE800D /* SceneDelegate.swift in Sources */,
+				7F50565C2CB4785D00BE800D /* NetworkCaller.swift in Sources */,
+				7F5056872CB6D7E500BE800D /* MPImageView+UIImageView.swift in Sources */,
+				7F5056582CB475B600BE800D /* MPLabel.swift in Sources */,
+				7F50565A2CB4766800BE800D /* RecipeModel.swift in Sources */,
+				7F5056732CB4D02B00BE800D /* LoadingIndicatorModel.swift in Sources */,
+				7F50567B2CB59B1000BE800D /* RecipeTableViewCellModel.swift in Sources */,
+				7F50567D2CB59B6400BE800D /* RecipeTableViewCellViewModel.swift in Sources */,
+				7F5056752CB4D0C000BE800D /* LoadingIndicatorViewModel.swift in Sources */,
+				7F5056682CB4BD9D00BE800D /* MPColor+UIColor.swift in Sources */,
+				7F50565E2CB47A9D00BE800D /* Constants.swift in Sources */,
+				7F5056662CB49F0700BE800D /* RecipesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +461,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7F50561B2CB462B200BE800D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F50561C2CB462B200BE800D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7F5056202CB462B400BE800D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,9 +603,7 @@
 				INFOPLIST_FILE = MPRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,9 +629,7 @@
 				INFOPLIST_FILE = MPRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
